@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mddeloarhossain.jonaki.BloodDonorProfileActivity"
+    tools:showIn="@layout/app_bar_blood_donor_profile">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="8dp"
+                >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:clickable="true"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/man"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:id="@+id/nameTextViewId"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Md. Deloar Hossain"
+                    android:textStyle="bold"
+                    android:textSize="21sp"
+                    android:layout_marginTop="20dp"/>
+
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:paddingTop="2dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"/>
+                        <TextView
+                            android:id="@+id/genderTextViewId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:textStyle="bold"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="#ff22"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Blood Group"
+                            android:textColor="@color/white"
+                            />
+                        <TextView
+                            android:id="@+id/bloodGroupTextViewId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="AB+"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Age"
+                            />
+                        <TextView
+                            android:id="@+id/ageTextViewId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="24"
+                            android:textStyle="bold"
+                            android:textSize="20sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:background="#fff3f3"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Donation:"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#1b1a1a"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/DonationDateId"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="6dp"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Last donation Date: "/>
+
+                            <TextView
+                                android:id="@+id/lastDonationDateTextId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Not Set Yet"
+                                android:padding="3dp"
+                                android:textColor="#3c03fa"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/BloodGroupId"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="6dp"
+
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="2dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Blood Group: "/>
+                            <TextView
+                                android:id="@+id/BloodGroupTextViewId"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="AB+"
+                                android:padding="3dp"
+                                android:textColor="#fc0202"
+                                android:textStyle="bold"/>
+
+
+                        </LinearLayout>
+
+
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="4">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_question" />
+
+                    <TextView
+                        android:layout_weight="1.85"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Donation Status"/>
+                    <TextView
+                        android:id="@+id/DonationStatusTextViewId"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": Ready"
+                        android:textStyle="bold"/>
+                    <Switch
+                        android:id="@+id/DonateSwitchId"
+                        android:layout_weight="0.65"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f4fff3"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                android:layout_marginTop="3dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="About Tution:"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:weightSum="4">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_question" />
+
+                    <TextView
+                        android:layout_weight="1.85"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tution Status"/>
+                    <TextView
+                        android:id="@+id/TutionStatusTextViewId"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": Ready"
+                        android:textStyle="bold"/>
+                    <Switch
+                        android:id="@+id/TutionSwitchId"
+                        android:layout_weight="0.65"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+
+                        />
+
+                </LinearLayout>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/SubjectCardViewId"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    app:cardCornerRadius="3dp"
+                    app:cardElevation="6dp"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Subject(s): "/>
+
+                        <TextView
+                            android:id="@+id/subjectTextViewId"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:textColor="#3c03fa" />
+
+
+                    </LinearLayout>
+
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f6f3ff"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Info:"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#1b1a1a"
+                    android:layout_marginBottom="5dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:weightSum="4">
+
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:src="@drawable/ic_mail" />
+
+                    <TextView
+                        android:layout_weight=".85"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email" />
+                    <TextView
+                        android:id="@+id/emailTextViewId"
+                        android:layout_weight="2.65"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": deloar.pust@gmail.com" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:weightSum="4">
+
+
+
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_call" />
+
+                    <TextView
+                        android:layout_weight=".85"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Phone" />
+                    <TextView
+                        android:id="@+id/contactNoTextViewId"
+                        android:layout_weight="2.65"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": +01765436702" />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#f3ffff"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    android:paddingTop="5dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#1b1a1a"
+                    android:layout_marginBottom="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:weightSum="4">
+
+
+
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_location_on" />
+
+                    <TextView
+
+                        android:layout_weight=".85"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="District" />
+                    <TextView
+                        android:id="@+id/districtTextViewId"
+                        android:layout_weight="2.65"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": Meherpur" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:weightSum="4">
+
+
+
+
+                    <ImageView
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_person_pin_circle" />
+
+                    <TextView
+                        android:layout_weight=".85"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Area " />
+                    <TextView
+                        android:id="@+id/areaTextViewId"
+                        android:layout_weight="2.65"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text=": Bangla Clinic, Pabna Shadar" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#f3ffff"
+                android:padding="8dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/editButton"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonstyle"
+                    android:text="Edit"
+                    android:drawableLeft="@drawable/ic_edit"
+
+                    />
+                <Button
+                    android:id="@+id/deleteButton"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonstyle"
+                    android:text="Delete"
+                    android:drawableLeft="@drawable/ic_delete"
+
+                    />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fab_addButtonColorNormal="@color/green"
+        app:fab_addButtonColorPressed="@color/grassdark"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_labelStyle="@style/custom_fab"
+        >
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fa0303"
+            app:fab_colorPressed="@color/white"
+            app:fab_icon="@drawable/ic_call"
+            app:fab_size="mini"
+            android:id="@+id/fab_action1"
+            app:fab_title="Make Call"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/pinkrose"
+            app:fab_icon="@drawable/ic_chat"
+            app:fab_size="mini"
+            android:id="@+id/fab_action2"
+            app:fab_title="Send Message"/>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/pinkrose"
+            app:fab_icon="@drawable/ic_mail"
+            app:fab_size="mini"
+            android:id="@+id/fab_Send_Email"
+            app:fab_title="Send Email"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/pinkrose"
+            app:fab_icon="@drawable/ic_facebook1"
+            app:fab_size="mini"
+            android:id="@+id/fab_action4"
+            app:fab_title="Connect with facebook"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/pinkrose"
+            app:fab_icon="@drawable/ic_add"
+            app:fab_size="mini"
+            android:id="@+id/fab_action5"
+            app:fab_title="Fab Action 5"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>

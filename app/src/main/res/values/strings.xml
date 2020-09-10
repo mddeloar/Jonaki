@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">জোনাকি</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="jonaki">জোনাকি</string>
+    <string name="title_activity_blood">BloodActivity</string>
+    <string name="title_activity_donor">DonorActivity</string>
+    <string name="title_activity_blood_donors">BloodDonorsActivity</string>
+    <string name="title_activity_blood_donor_registration">BloodDonorRegistrationActivity</string>
+
+
+    <string-array name="BloodGroup">
+        <item>Blood Group</item>
+        <item>AB+</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB-</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="Gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="title_activity_blood_donor_upload_image">BloodDonorUploadImage</string>
+    <string name="title_activity_blood_donor_profile">BloodDonorProfileActivity</string>
+    <string name="title_activity_blood_donor_single_profile">BloodDonorSingleProfileActivity
+    </string>
+    <string name="title_activity_ambulance">AmbulanceActivity</string>
+    <string name="title_activity_ambulance_registration">AmbulanceRegistrationActivity</string>
+    <string name="title_activity_ambulance_details">AmbulanceDetailsActivity</string>
+    <string name="title_activity_fire_service">FireServiceActivity</string>
+    <string name="title_activity_fire_service_details">FIreServiceDetailsActivity</string>
+    <string name="title_activity_fire_service_registration">FireServiceRegistrationActivity</string>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "193188517840",
+    "firebase_url": "https://jonaki-ea4fb.firebaseio.com",
+    "project_id": "jonaki-ea4fb",
+    "storage_bucket": "jonaki-ea4fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193188517840:android:d8ee853c40283487",
+        "android_client_info": {
+          "package_name": "com.example.mddeloarhossain.jonaki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193188517840-2tf5asroi7suespcd5shsebemq866v3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mddeloarhossain.jonaki",
+            "certificate_hash": "ae0860910c82ae0eb88dca3081fe530c6807f32f"
+          }
+        },
+        {
+          "client_id": "193188517840-gphb7sn1vkglp5hjf4qgc7k0k8koplm3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzna5HGYbVKqfbEqdJdDfjwSrMta_Scys"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "193188517840-gphb7sn1vkglp5hjf4qgc7k0k8koplm3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

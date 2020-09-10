@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:title="Update Database"
+        android:id="@+id/UpdateDatabaseMenuItemId"
+        />
+    <item
+        android:title="Feedback"
+        android:id="@+id/FeedbackMenuItemId"
+        />
+    <item
+        android:title="About Organization"
+        android:id="@+id/AboutOrganizationUsMenuItemId"
+        />
+    <item
+        android:title="Contact Us"
+        android:id="@+id/ContactUsMenuItemId"
+        />
+    <item
+        android:title="About Us"
+        android:id="@+id/AboutUsMenuItemId"
+        />
+
+    <item
+        android:title="Sign Out"
+        android:id="@+id/SignOutMenuItemId"
+        />
+    <item
+        android:title="About App"
+        android:id="@+id/AboutAppUsMenuItemId"
+        />
+    <item
+        android:title="About Developer"
+        android:id="@+id/AboutDeveloperUsMenuItemId"
+        />
+    <item
+        android:title="Share"
+        android:id="@+id/ShareMenuItemId"
+        />
+    <item
+        android:title="Exit"
+        android:id="@+id/ExitMenuItemId"
+        />
+</menu>

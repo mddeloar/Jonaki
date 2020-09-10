@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary1">#FFC107</color>
+    <color name="colorPrimaryDark1">#FFA000</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="white">#ffffff</color>
+    <color name="grapefruit">#ed5565</color>
+    <color name="grapefruitdark">#da4453</color>
+    <color name="bittersweet">#fc6e51</color>
+    <color name="bittersweetdark">#e9573f</color>
+    <color name="flower">#ffce54</color>
+    <color name="flowerdark">#fc8b42</color>
+    <color name="grass">#a0d468</color>
+    <color name="grassdark">#8cc152</color>
+    <color name="bluejeans">#509cec</color>
+    <color name="bluejeansdark">#4a89dc</color>
+    <color name="lavander">#ac92ec</color>
+    <color name="lavanderdark">#967adc</color>
+    <color name="mint">#48cfad</color>
+    <color name="mintdark">#37bc9b</color>
+    <color name="aqua">#4fc1e9</color>
+    <color name="aquadark">#3bafda</color>
+    <color name="pinkrose">#ec87c0</color>
+    <color name="pinkrosedark">#d770ad</color>
+    <color name="green">#00bfa5</color>
+    <color name="red">#fa030b</color>
+
+</resources>
